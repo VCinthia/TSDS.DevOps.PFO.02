@@ -10,7 +10,7 @@
 
 ## Descripción
 
-Uso de Docker, imágenes y contenedores creandolos a través de imágenes de uso público. Poder conectarse a ese contenedor para dockerizar un proyecto web y poder utilizar ese docker en el futuro.
+Uso de Docker, imágenes y contenedores creandolos a través de imágenes de uso público. Conectarse a ese contenedor para dockerizar un proyecto web.
 
 ---
 
