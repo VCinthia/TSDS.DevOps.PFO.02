@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  mysql-server:
+    image: mysql:8
+    container_name: mysql-server
+    environment:
+      MYSQL_ROOT_PASSWORD: passx
+      MYSQL_DATABASE: pfo2
+    ports:
+      - "3306:3306"
+    networks:
+      - pfo-net
+
+  php-web:
+    image: cinthiarvlab/php-web-pfo2
+    container_name: php-web
+    ports:
+      - "8080:80"
+    networks:
+      - pfo-net
+
+networks:
+  pfo-net:
